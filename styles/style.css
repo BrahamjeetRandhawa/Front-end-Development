@@ -1,8 +1,290 @@
+
 /**************/
 /* CSS REMEDY */
 /**************/
 *, *::after, *::before {
-  box-sizing:border-box;  
+	box-sizing:border-box;  
+  }
+  
+  
+  /* * {
+	overflow-x: hidden;
+  } */
+  
+  
+  
+  /*********************/
+  /* CUSTOM PROPERTIES */
+  /*********************/
+  :root {
+	  /* startje */
+	  --color-text:#111;
+	  --color-background:#eee;
+	  /* color-scheme: light dark; */
+  }
+  
+  
+  
+  /* De font rechtzetten!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!///////////////////////////////////////// */
+  
+  /****************/
+  /* JOUW STYLING */
+  /****************/
+  
+  /* jouw code */
+
+h2 {
+	font-family: sans-serif;
+	font-size: 24px;
+	letter-spacing: 0;
+}
+
+h3 {
+	font-family: sans-serif;
+	font-size: 20px;
+}
+
+p {
+	font-family: sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+}
+
+summary {
+	font-family: sans-serif;
+	font-size: 14px;
+}
+
+
+
+
+
+body {
+	overflow-x: hidden;
+	margin: 0;
+	padding: 0;
+	margin-bottom: 50px;
+	/* Verander dit om de onderkant van de pagina te veranderen */
+	/* background-color: light dark (rgb(238, 238, 238) black);
+	color: light dark(black white); */
+}
+
+
+body header {
+	display: flex;
+	background-color: rgb(255, 255, 255);
+	width: 100%;
+	position: absolute;
+	overflow-x: hidden;
+	top: 0;
+	box-shadow: 0px 0px 10px 0px;
+	-webkit-backdrop-filter: blur(10px);
+	backdrop-filter: blur(10px);
+}
+
+
+
+/* Navbar */
+
+body header h1 img {
+	display: flex;
+	width: 4em;
+}
+
+h1 a {
+	display: flex;
+	margin-top: 1px;
+	transform: translateX(20px)
+} 
+
+Nav ul {
+	display: flex;
+	justify-content: space-around;
+	margin: 10px;
+	overflow: hidden;
+	list-style-type: none
+}
+
+nav li {
+	border: 1px solid black;
+	border-radius: 30px;
+	padding: 10px;
+}
+
+/* Hier begint de pagina */
+
+
+
+.index section:first-of-type img {
+	/* Maak de width en height 80% en zet dit recht */
+	width: 100%;
+	max-width: 90em;
+	height: 100%;
+	border-radius: 20px;
+	margin-top: 10em;
+	border: solid black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+	cursor: grab;
+}
+
+/* main div:first-of-type img {
+	object-fit: cover;
+} */
+
+
+
+.index ul:first-of-type {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	margin-top: 2em;
+	border: 3px solid red;
+}
+
+.index ul:first-of-type button {
+	padding: 10px;
+	border-radius: 100%;
+	margin: 0 1px;
+}
+
+
+.index h2 {
+	text-align: center;
+	margin-top: 3em;
+}
+
+.index section:nth-of-type(2) {
+	background-color: grey;
+	/* box-shadow: 0px 0px 12px grey; */
+	margin-top: 2em;
+	border-radius: 20px;
+	padding: 20px;
+	padding-top: 20px;
+	padding-bottom: 2em;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: unset;
+	margin-left: 5vw;
+	width: 90vw;
+	/* z-index: 1; */
+}
+
+.index section:nth-of-type(2) button {
+	border: 3px solid black;
+	padding: 10px;
+	border-radius: 48px;
+	width: 100%;
+	margin-top: 3em;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13.33px;
+}
+
+
+
+
+
+/* Hier de aanspreking goed checken */
+.index img:first-of-type {
+	align-items: center;
+	width: 100svw;
+	/* z-index: -1;
+	position: absolute;
+	transform: translateY(-100px); */
+}
+
+/* main div:nth-of-type(2) button {
+	border: 3px solid black;
+	padding: 10px;
+	border-radius: 48px;
+	width: 100%;
+	margin-top: 3em;
+}
+
+main div:nth-of-type(3) {
+	border: 2px solid black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 50%;
+	border-radius: 1em;
+}
+
+main div:nth-of-type(3) img {
+	padding: 3em;
+	padding-top: 5em;
+	padding-bottom: 5em;
+}
+
+main div:nth-of-type(4) {
+	border: 2px solid black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 50%;
+	border-radius: 1em;
+}
+
+main div:nth-of-type(4) img {
+	padding: 3em;
+	padding-top: 5em;
+	padding-bottom: 5em;
+} */
+
+
+/* nog een div toevoegen om de coca cola en fanta te flexen en daarna naast elkaar te zetten. */
+
+
+
+/* main section:nth-of-type(3) ul {
+	display: flex;
+	flex-wrap: wrap;
+	list-style-type: none;
+	gap: 1em;
+	align-items: center;
+	justify-content: center;
+}
+
+main section:nth-of-type(3) ul li {
+	border: 5px solid black;
+	padding: 1em;
+	border-radius: 20px;
+	flex-basis: 25%;
+}
+
+main section:nth-of-type(3) ul li img {
+	min-width: 4em;
+	max-width: 8em;
+} */
+
+
+
+
+.index section:nth-of-type(3) ul {
+	display: flex;
+	flex-wrap: wrap;
+	border: 3px solid black;
+	align-items: center;
+	justify-content: center;
+}
+
+.index section:nth-of-type(3) ul li {
+	flex-basis: 25%;
+	list-style-type: none;
+	border: 3px solid green;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 200px;
+	width: 200px;
+	
+}
+
+.index section:nth-of-type(3) ul li img {
+	max-width: 100%;	
 }
 
 
@@ -10,22 +292,244 @@
 
 
 
-/*********************/
-/* CUSTOM PROPERTIES */
-/*********************/
-:root {
-	/* startje */
-	--color-text:#111;
-	--color-background:#eee;
+
+
+
+
+/* Hier begint de footer */
+
+
+body footer {
+	display: flex;
+	/* width: 100%;
+	bottom: 0;
+	left: 0; */
+	background-color: black;
+}
+
+body footer section h2 img {
+	display: flex;
+	width: 10em;
+	top: 0;
+	margin-left: 1em;
+}
+
+body footer section {
+	display: flex;
+	flex-direction: column;
+	margin-top: 30px;
+	width: 100vw;
+}
+
+/* Ik gebruik hier div om zo beter de button in het midden te krijgen */
+
+body footer section div:first-of-type {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	margin-top: 3em;
+	margin-bottom: 2em;
+}
+
+body footer section button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: black;
+	color: white;
+	border: 2px solid white;
+	border-radius: 20px;
+	width: 90%;
+}
+
+body footer section hr {
+	display: flex;
+	height: 0;
+	width: 90%;
+	bottom: 0;
+}
+
+/* Details tab */
+
+body footer section details {
+	display: flex;
+	flex-direction: column;
+	color: white;
+	background-color: transparent;
+	padding: 1em 0;
+}
+
+/* Hier nog de pijl toevoegen om de detailstab in of uit te klappen */
+
+body footer section details summary {
+	width: 90%;
+	margin: auto;
+	list-style-type: none;
+	font-size: 24px;
+}
+
+body footer section ul:first-of-type {
+	display: flex;
+	flex-wrap: wrap;
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	font-family: sans-serif;
+	font-size: 14px;
+	font-weight: 700;
+	font-stretch: normal;
+	border: 4px solid red;
+}
+
+body footer section ul:first-of-type li {
+	flex-basis: 50%;
+	color: white;
+	list-style-type: none;
+	border: 4px solid green;
+}
+
+body footer section ul:first-of-type li:nth-of-type(3), li:nth-of-type(4) {
+	margin-top: 15px;
+}
+
+body footer section ul:nth-of-type(2) {
+	display: flex;
+	align-items: left;
+	flex-direction: row;
+}
+
+body footer section ul:nth-of-type(2) li {
+	list-style-type: none;
+	border: 2px solid blue;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+}
+
+body footer section ul:last-of-type {
+	display: flex;
+	flex-direction: row;
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	gap: .5em;
+}
+
+body footer section ul:last-of-type li {
+	border: 1px solid white;
+	width: 9em;
+	border-radius: 10px;
+}
+
+body footer section ul:last-of-type li img {
+	width: 100%;
+	border-radius: 10px;
+}
+
+body footer section p:last-of-type {
+	display: flex;
+	width: 90%;
+	margin-left: 20px;
+	margin-right: auto;
+	color: white;
+	font-size: 12px;
+	font-weight: 400;
 }
 
 
 
 
+/* Pagina 2 Fanta */
 
-/****************/
-/* JOUW STYLING */
-/****************/
 
-/* jouw code */
+/* Img verandert niet in portrait view!!! */
+.Fanta div:first-of-type {
+	width: 20em;
+	border: 10px solid black;
+}
 
+
+.Fanta div:first-of-type img {
+	width: auto;
+	height: auto;
+	max-width: 100%;
+	max-height: 100%;
+	object-fit: cover;
+	/* display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-left: auto;
+	margin-right: auto;
+	width: 30em; */
+}
+
+
+.Fanta h2:first-of-type {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 28px;
+	font-weight: 700;
+}
+
+
+/* Section met allemaal flessen */
+
+
+.Fanta section img:first-of-type {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 80%;
+	border-radius: 20px;
+	box-shadow: 0px 0px 12px grey;
+	margin-bottom: 4em;
+	margin-top: 4em;
+}
+
+.Fanta section h3:first-of-type {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.Fanta section p:first-of-type {
+	display: flex;
+	text-align: center;
+	width: 85%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.Fanta section p:nth-of-type(2) {
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	width: 85%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.Fanta section p:nth-of-type(3) {
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	width: 85%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.Fanta section details summary {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.Fanta section details hr:first-of-type {
+	width: 90%;
+	height: 10px;
+	background-color: lightgray;
+}
