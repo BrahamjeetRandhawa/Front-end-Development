@@ -57,38 +57,48 @@ summary {
 
 
 
-
-
 body {
 	overflow-x: hidden;
 	margin: 0;
 	padding: 0;
 	margin-bottom: 50px;
+	background-color: rgb(238, 238, 238);
+	position: relative;
 	/* Verander dit om de onderkant van de pagina te veranderen */
 	/* background-color: light dark (rgb(238, 238, 238) black);
 	color: light dark(black white); */
 }
 
 
-body header {
+header {
 	display: flex;
+	justify-content: space-between;
+	align-items: center;
 	background-color: rgb(255, 255, 255);
 	width: 100%;
-	position: absolute;
 	overflow-x: hidden;
-	top: 0;
 	box-shadow: 0px 0px 10px 0px;
 	-webkit-backdrop-filter: blur(10px);
 	backdrop-filter: blur(10px);
+	flex-wrap: wrap;
+
 }
 
 
 
 /* Navbar */
 
-body header h1 img {
+header h1 img {
 	display: flex;
 	width: 4em;
+}
+
+/* Hier gebruik ik een class, omdat ik de fanta logo wil aanspreken en niet de andere img in de header (Coca-Cola logo). Als ik last of type kies dan wordt ook de coca-cola logo gepakt, omdat die op de index.html als enige erop staat. */
+.Fanta_header {
+	display: flex;
+	width: 20%;
+	margin: 0 auto;
+	margin-bottom: 1em;
 }
 
 h1 a {
@@ -97,7 +107,7 @@ h1 a {
 	transform: translateX(20px)
 } 
 
-Nav ul {
+/* Nav ul {
 	display: flex;
 	justify-content: space-around;
 	margin: 10px;
@@ -109,14 +119,102 @@ nav li {
 	border: 1px solid black;
 	border-radius: 30px;
 	padding: 10px;
+} */
+
+
+
+/* Hamburger menu */
+
+header button {
+	border: 5px solid green;
+	width: 4em;
+	margin-right: 0;
 }
+
+header button hr {
+	width: 100%;
+	height: 4px;
+	color: black;
+	background-color: black;
+	border-radius: 20px;
+}
+
+header nav {
+	/* position: fixed; */
+	position: absolute;
+	z-index: 2;
+	background-color: yellow;
+	height: 100vh;
+	width: 100vw;
+	bottom: 0;
+	right: 0;
+	display: grid;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Hier begint de pagina */
 
 
+.index section:first-of-type {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	border-radius: 10px;
+	width: 80%;
+	margin: 0 auto;
+	margin-top: 8em;
+	cursor: grab;
+}
 
-.index section:first-of-type img {
-	/* Maak de width en height 80% en zet dit recht */
+.index section:first-of-type h2 {
+	position: absolute;
+	color: white;
+	bottom: 25%;
+	width: 80%;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+
+.index section:first-of-type p {
+	position: absolute;
+	color: white;
+	bottom: 15%;
+	width: 50%;
+	left: 50%;
+	transform: translateX(-50%);
+	text-align: center;
+}
+
+.index section:first-of-type button {
+	position: absolute;
+	bottom: 5%;
+	width: 80%;
+	border-radius: 20px;
+	padding: 1em;
+	font-family: sans-serif;
+	left: 50%;
+	transform: translateX(-50%);
+
+}
+
+
+
+/* .index section:first-of-type img {
 	width: 100%;
 	max-width: 90em;
 	height: 100%;
@@ -126,25 +224,37 @@ nav li {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	margin-left: auto;
+	margin-right: auto;
 	overflow: hidden;
 	cursor: grab;
-}
-
-/* main div:first-of-type img {
-	object-fit: cover;
 } */
 
 
 
-.index ul:first-of-type {
+
+
+
+
+
+.index section:first-of-type img {
+	object-fit: cover;
+	border-radius: 10px;
+}
+
+
+
+.index section:nth-of-type(2) ul {
 	display: flex;
 	justify-content: center;
 	text-align: center;
 	margin-top: 2em;
 	border: 3px solid red;
+	list-style-type: none;
+	padding: 0;
 }
 
-.index ul:first-of-type button {
+.index section:nth-of-type(2) ul:first-of-type li button {
 	padding: 10px;
 	border-radius: 100%;
 	margin: 0 1px;
@@ -155,139 +265,109 @@ nav li {
 	text-align: center;
 	margin-top: 3em;
 }
+/* box-shadow: 0px 0px 12px grey; */
 
-.index section:nth-of-type(2) {
-	background-color: grey;
-	/* box-shadow: 0px 0px 12px grey; */
-	margin-top: 2em;
-	border-radius: 20px;
-	padding: 20px;
-	padding-top: 20px;
-	padding-bottom: 2em;
-	display: flex;
-	flex-direction: column;
-	flex-wrap: unset;
-	margin-left: 5vw;
-	width: 90vw;
-	/* z-index: 1; */
+
+
+.index section:nth-of-type(3) img {
+	width: 100%;
 }
 
-.index section:nth-of-type(2) button {
+.index section:nth-of-type(3) {
+	margin-top: 23em;
+	position: relative;
+}
+
+.index section:nth-of-type(3) aside h3 {
+	display: flex;
+	width: 100%;
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 28px;
+	font-kerning: auto;
+	font-stretch: normal;
+	letter-spacing: 0;
+}
+
+.index section:nth-of-type(3) aside {
+	position: absolute;
+	background-color: white;
+	box-shadow: 0px 0px 12px grey;
+	padding: 1em 2em 2em 2em;
+	border-radius: 20px;
+	width: 90%;
+	left: 5%;
+	right: 5%;
+	top: -18em;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: unset;
+}
+
+.index section:nth-of-type(3) aside button {
 	border: 3px solid black;
 	padding: 10px;
+	background-color: white;
 	border-radius: 48px;
-	width: 100%;
+	width: 90%;
 	margin-top: 3em;
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 13.33px;
 }
 
-
-
-
-
-/* Hier de aanspreking goed checken */
-.index img:first-of-type {
-	align-items: center;
-	width: 100svw;
-	/* z-index: -1;
-	position: absolute;
-	transform: translateY(-100px); */
-}
-
-/* main div:nth-of-type(2) button {
-	border: 3px solid black;
-	padding: 10px;
-	border-radius: 48px;
+.index section:nth-of-type(4) ul {
+	display: flex;
+	flex-direction: row;
 	width: 100%;
-	margin-top: 3em;
-}
-
-main div:nth-of-type(3) {
-	border: 2px solid black;
-	display: flex;
 	justify-content: center;
 	align-items: center;
-	width: 50%;
-	border-radius: 1em;
-}
-
-main div:nth-of-type(3) img {
-	padding: 3em;
-	padding-top: 5em;
-	padding-bottom: 5em;
-}
-
-main div:nth-of-type(4) {
-	border: 2px solid black;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 50%;
-	border-radius: 1em;
-}
-
-main div:nth-of-type(4) img {
-	padding: 3em;
-	padding-top: 5em;
-	padding-bottom: 5em;
-} */
-
-
-/* nog een div toevoegen om de coca cola en fanta te flexen en daarna naast elkaar te zetten. */
-
-
-
-/* main section:nth-of-type(3) ul {
-	display: flex;
 	flex-wrap: wrap;
 	list-style-type: none;
-	gap: 1em;
-	align-items: center;
-	justify-content: center;
+	padding: 0;
 }
 
-main section:nth-of-type(3) ul li {
-	border: 5px solid black;
-	padding: 1em;
+.index section:nth-of-type(4) ul li {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 183px;
+	height: 183px;
+	margin: 1em;
+	box-shadow: 0px 0px 12px grey;
 	border-radius: 20px;
-	flex-basis: 25%;
 }
 
-main section:nth-of-type(3) ul li img {
-	min-width: 4em;
-	max-width: 8em;
-} */
 
 
-
-
-.index section:nth-of-type(3) ul {
-	display: flex;
-	flex-wrap: wrap;
-	border: 3px solid black;
-	align-items: center;
-	justify-content: center;
+.index section:nth-of-type(4) ul li img {
+	width: 75%;
 }
 
-.index section:nth-of-type(3) ul li {
-	flex-basis: 25%;
+.index section:nth-of-type(4) ul li:nth-of-type(2) a {
 	list-style-type: none;
-	border: 3px solid green;
 	display: flex;
-	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	height: 200px;
-	width: 200px;
-	
-}
-
-.index section:nth-of-type(3) ul li img {
-	max-width: 100%;	
 }
 
 
+.index > button:last-of-type {
+	display: flex;
+	flex-wrap: unset;
+	margin-left: auto;
+	margin-right: auto;
+	align-items: center;
+	justify-content: center;
+	width: 90%;
+	padding: .5em;
+	background-color: white;
+	border-radius: 20px;
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 5em;
+}
 
 
 
@@ -299,7 +379,7 @@ main section:nth-of-type(3) ul li img {
 /* Hier begint de footer */
 
 
-body footer {
+footer {
 	display: flex;
 	/* width: 100%;
 	bottom: 0;
@@ -307,32 +387,22 @@ body footer {
 	background-color: black;
 }
 
-body footer section h2 img {
+footer section h2 img {
 	display: flex;
 	width: 10em;
 	top: 0;
 	margin-left: 1em;
 }
 
-body footer section {
+footer section {
 	display: flex;
 	flex-direction: column;
 	margin-top: 30px;
 	width: 100vw;
 }
 
-/* Ik gebruik hier div om zo beter de button in het midden te krijgen */
 
-body footer section div:first-of-type {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 100%;
-	margin-top: 3em;
-	margin-bottom: 2em;
-}
-
-body footer section button {
+footer section button {
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -341,18 +411,20 @@ body footer section button {
 	border: 2px solid white;
 	border-radius: 20px;
 	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 2em;
+	margin-top: 3em;
 }
 
-body footer section hr {
+footer section hr {
 	display: flex;
-	height: 0;
 	width: 90%;
-	bottom: 0;
 }
 
 /* Details tab */
 
-body footer section details {
+footer section details {
 	display: flex;
 	flex-direction: column;
 	color: white;
@@ -362,14 +434,41 @@ body footer section details {
 
 /* Hier nog de pijl toevoegen om de detailstab in of uit te klappen */
 
-body footer section details summary {
+footer section details summary {
 	width: 90%;
 	margin: auto;
-	list-style-type: none;
+	/* list-style-type: none; */
 	font-size: 24px;
 }
 
-body footer section ul:first-of-type {
+/* Hier de pijl aanpassen!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+
+footer section details summary::marker {
+	color: red;
+	display: flex;
+	flex-direction: row-reverse;
+	content: "\25B6";
+	/* background-color: red;
+	padding: 8px;
+	color: red; */
+}
+
+footer section details ul {
+	display: flex;
+	flex-direction: column;
+	margin: 16px 24px;
+	list-style-type: none;
+	font-family: sans-serif;
+	font-size: 14px;
+	font-weight: 700;
+	font-stretch: normal;
+}
+
+footer section details ul li {
+	margin: 16px 0px 0px;
+}
+
+/* footer section ul:first-of-type {
 	display: flex;
 	flex-wrap: wrap;
 	width: 90%;
@@ -379,55 +478,113 @@ body footer section ul:first-of-type {
 	font-size: 14px;
 	font-weight: 700;
 	font-stretch: normal;
-	border: 4px solid red;
+	padding: 0;
+} */
+
+.informatie {
+	display: flex;
+	flex-wrap: wrap;
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	font-family: sans-serif;
+	font-size: 14px;
+	font-weight: 700;
+	font-stretch: normal;
+	padding: 0;
 }
 
-body footer section ul:first-of-type li {
+/* footer section ul:first-of-type li {
 	flex-basis: 50%;
 	color: white;
 	list-style-type: none;
-	border: 4px solid green;
+	margin-bottom: 10px;
+	font-size: 16px;
+	font-size: bold;
+} */
+
+.informatie li {
+	flex-basis: 50%;
+	color: white;
+	list-style-type: none;
+	margin-bottom: 10px;
+	font-size: 16px;
+	font-size: bold;
 }
 
-body footer section ul:first-of-type li:nth-of-type(3), li:nth-of-type(4) {
+/* body footer section ul:first-of-type li:nth-of-type(3) > li:nth-of-type(4)  {
 	margin-top: 15px;
-}
+} */
 
-body footer section ul:nth-of-type(2) {
+footer section ul:nth-of-type(2) {
 	display: flex;
 	align-items: left;
 	flex-direction: row;
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 2em;
+	flex-wrap: wrap;
+	padding: 0;
 }
 
-body footer section ul:nth-of-type(2) li {
+
+
+footer section ul:nth-of-type(2) li {
 	list-style-type: none;
-	border: 2px solid blue;
-	width: 50px;
-	height: 50px;
-	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 2px solid white;
+	width: 30px;
+	height: 30px;
+	margin-right: 1em;
+	padding: 5px;
+	border-radius: 100%;
 }
 
-body footer section ul:last-of-type {
+/* footer section ul:last-of-type {
+	display: flex;
+	flex-direction: row;
+	justify-content: left;
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	gap: .5em;
+	flex-wrap: wrap-reverse;
+	padding: 0;
+}
+
+footer section:last-of-type ul li {
+	border: 1px solid white;
+	width: 9em;
+	border-radius: 10px;
+} */
+
+.Social_Media {
 	display: flex;
 	flex-direction: row;
 	width: 90%;
 	margin-left: auto;
 	margin-right: auto;
-	gap: .5em;
+	padding: 0;
 }
 
-body footer section ul:last-of-type li {
-	border: 1px solid white;
+
+.Social_Media li {
 	width: 9em;
 	border-radius: 10px;
+	border: 2px solid white;
 }
 
-body footer section ul:last-of-type li img {
+footer section ul:last-of-type li img {
 	width: 100%;
 	border-radius: 10px;
 }
 
-body footer section p:last-of-type {
+/* /////////////////////////////////////////////////////////////////////////////////////////// */
+
+footer section p:last-of-type {
 	display: flex;
 	width: 90%;
 	margin-left: 20px;
@@ -444,28 +601,43 @@ body footer section p:last-of-type {
 
 
 /* Img verandert niet in portrait view!!! */
-.Fanta div:first-of-type {
-	width: 20em;
-	border: 10px solid black;
+/* Hier checken of ik de class weg kan halen. */
+.Fanta_img {
+	display: flex;
+	margin-left: auto;
+	margin-right: auto;
+	width: 90%;
+	margin-top: 10em;
+	border-radius: 20px;
+	height: 644px;
+	object-fit: cover;
+	margin-bottom: 4em;
 }
 
 
-.Fanta div:first-of-type img {
-	width: auto;
-	height: auto;
-	max-width: 100%;
-	max-height: 100%;
-	object-fit: cover;
+/* .Fanta div:first-of-type {
+	width: 90%;
+	object-fit: contain;
+	border: 5px solid green;
+	margin-top: 10em;
+
+} */
+
+
+/* .Fanta div:first-of-type img {
+	width: 100%;
+	height: 100%;
+	object-fit: contain; */
 	/* display: flex;
 	align-items: center;
 	justify-content: center;
 	margin-left: auto;
 	margin-right: auto;
 	width: 30em; */
-}
+/* } */
 
-
-.Fanta h2:first-of-type {
+/* Hier checken of ik class kan vervangen!!! */
+.text {
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -526,10 +698,114 @@ body footer section p:last-of-type {
 	justify-content: center;
 	font-size: 18px;
 	font-weight: bold;
+	margin-bottom: 1em;
 }
+
+.Fanta section details article h2 {
+	display: flex;
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	justify-content: left;
+}
+
 
 .Fanta section details hr:first-of-type {
 	width: 90%;
-	height: 10px;
+	height: 5px;
 	background-color: lightgray;
 }
+
+.Fanta section details div {
+	display: flex;
+	justify-content: space-between;
+	margin: 0 auto;
+	width: 90%;
+}
+
+
+.Fanta details[open] article {
+	background-color: white;
+	width: 90%;
+	margin: 0 auto;
+	padding: 20px;
+}
+/* Hierin transitionen om het mooier op te laten komen!!!///////////////// */
+
+
+.Fanta details article hr {
+	width: 90%;
+}
+
+
+/* Helluppppppp/////////////////////////////////////////////////////////// */
+/* .Fanta details article ul {
+	border: 5px solid green;
+	padding: 0;
+	flex-basis: 50%;
+	flex-wrap: wrap;
+}
+
+.Fanta details article ul li {
+	display: flex;
+	flex-direction: row;
+	border: 8px solid red;
+	justify-content: space-between;
+	flex-basis: 50%;
+	flex-wrap: wrap;
+} */
+
+
+
+
+.Fanta section:nth-of-type(8) h2 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.Fanta section:nth-of-type(8) p {
+	margin-bottom: 4em;
+}
+
+.Fanta section:last-of-type {
+	background-color: black;
+	display: flex;
+	flex-direction: column;
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 5em;
+	border-radius: 20px;
+	padding: 2em;
+}
+
+.Fanta section:last-of-type h2 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+}
+
+.Fanta section:last-of-type ul {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 0;
+}
+
+.Fanta section:last-of-type ul li {
+	list-style-type: none;
+	border: 2px solid white;
+	padding: 10px;
+	height: 40px;
+	width: 40px;
+	border-radius: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+

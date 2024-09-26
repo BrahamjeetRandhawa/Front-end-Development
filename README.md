@@ -194,6 +194,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
 
+  De code ging goed om na te maken. Daarentegen had ik wel wat last van het verkrijgen van sommige images. En het recht zetten van de images.
+  
+  <img src="readme-images/Screenshot_code_week_1.png" width="375px" alt="breakdown van nog een dynamisch deel">
+
 
   ### Agenda voor meeting
   samen met je groepje opstellen
@@ -218,10 +222,13 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - punt 1: Vermijd de div. Meer articles, sections of ul gebruiken inplaats van de div.
+  - punt 2: Gebruik figure om captions toe te voegen aan plaatjes.
+  - nog een punt: Minimaal 5 Surface plane elementen toevoegen aan de website.
+  - ...Punt 3: Carousel hoeft niet infinite te werken op de pagina, zolang het maar van de ene naar de volgende plaatje kan gaan.
+  Punt 4: Maak het niet te moeilijk houd het zo dicht mogelijk bij de echte website.
+  Punt 5: Gebruik zoveel mogelijk selectoren en geen classes.
+  Punt 6: Aria atributen kunnen gebruikt worden ter ondersteuning voor screenreaders. Niet gebruiken als er al een element in zit die het al duidelijk aan geeft. Zoals bij een img met een alt text. Dan hoeft dat niet.
 
 </details>
 
