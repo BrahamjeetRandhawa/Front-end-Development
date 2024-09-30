@@ -172,13 +172,14 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na afloop 3<sup>e</sup> werkgroep</summary>
 
   ### de hele pagina: 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
+  <img src="readme-images/Homepagina_breakdown_schets.png" width="375px" alt="breakdown van de hele pagina">
 
   ### dynamisch deel (bijv menu): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
+  <img src="readme-images/Dynamische_deel_breakdown_schets.png" width="375px" alt="breakdown van een dynamisch deel">
 
   ### wellicht nog een dynamisch deel (bijv filter): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
+  Fanta pagina breakdown schets
+  <img src="readme-images/Breakdown_schets_fanta.png" width="375px" alt="breakdown de tweede pagina">
 
 </details>
 
@@ -255,12 +256,19 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   | ...            | ...                | ...          | ...              |
 
 
+| Thomas      | Braham          | Aya    | Joy        |
+  | ---            | ---                | ---          | ---              |
+  | Hoe zorg ik dat mijn header van kleur verandert, als ik voorbij een bepaald punt op mijn pagina ben?  | Hoe krijg ik de pijl van de details element aan de andere kant van de summary?    | hoe zorg ik dat een deel van de header vast blijven tijdnes het scrollen (position: fixed en sticky niet gewerkt)  | en dan ik dat    |
+  | Is het echt verkeerd om dingen te positionen met paddings en margins?            | Moest je nou je hele main een class geven, of per element?              | Mijn elementen schuiven naar rechts toe en ik weet niet waar ik een fout heb staan in de code. Alles staat scheef hellup!!!!          | ...              |
+
+
+
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
+  - punt 1: Je kunt de ::marker element gebruiken om de pijl aan te spreken in de details tab.
+  - punt 2: het positioneren op het scherm met margin en padding is goed om te doen. Let wel op met welke waarde je dat doet. Als je het met percentage doet dan schaalt het nog mee met de pagina, maar als je px of em gebruikt dan blijft het op 1 plek vast zitten.
+  - nog een punt: Je hebt ergens een de elementen verkeerd aangesproken check dit.
 - ...
 
 </details>
@@ -276,6 +284,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
+
+  Elke knop op de pagina is identiek en heeft zijn eigen naam. De knoppen zijn goed te vinden op de pagina. De HTML is goed gekeurd door de checker. Ik heb beide pagina's gecheckt. Ook heb ik de CSS gecheckt en kwam ik erachter dat er wat fouten in zitten die te maken hebben met de translate van een element. Er zit een lang atribuut in de HTML namelijk NL. Elke pagina heeft een unieke titel. De viewport zoom is niet dissabled. De focus stijl met de tab is goed te zien. En het matcht de stijl van de pagina. De website kan worden gedraaid, maar het ziet er minder goed uit. Wel is het nog te gebruiken. Horizontaal scrollen hier weggehaald. De knoppen kunnen gemakkelijk open gemaakt worden. Er is genoeg ruimte tussen objecten op de pagina. Er is maximaal 1 h1 op de pagina aanwezig. Heading levels worden niet overgeslagen. list content heeft op de pagina allemaal een ul, ol of dl element. Elke img heeft een alt text die ingevuld is. De images hebben niet allemaal de text erop als de alt text. Ik heb er geen media in staan die afgespeeld kan worden. a element wordt gebruikt voor linkjes op de pagina. De button element wordt gebruikt voor de button. dark en light mode kan worden gebruikt op de pagina door de hele OS in het donker te zetten. De animaties zijn rustig en duidelijk. De contrast op de pagina is goed te onderscheiden.
 
 </details>
 
@@ -302,12 +312,20 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   | ...            | ...                | ...          | ...              |
 
 
+| Thomas      | Braham         | Aya   | Joy        |
+  | ---            | ---                | ---          | ---              |
+  | Hoe kan ik het best die gradients doen van de afbeeldingen?  | Moet de carousel direct overeen komen met hoe de website er daadwerkelijk uitziet?             | en ik dit    | Wat vind je van het plan voor de rest van mijn werk?    |
+  | Wat is de beste manier om vormen te maken? Met SVG, of met Border Radius? | Hoe los ik alle problemen met rescalability op? | nog een punt | dit wil ik zeker |
+  | ...            | ...                | ...          | ...              |
+
+
+
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
+  - punt 1: De carousel hoeft niet sprekend te lijken op de carousel op de officiele website. Wel moet het als een carousel werken dus het moet kunnen scrollen
+  - punt 2: Met svg kun je makkelijker vormen maken en gebruiken op de website.
+  - nog een punt: Je moet percentage of vh, vw gebruiken om de scalability te verbeteren.
   - ...
 
 </details>
@@ -328,13 +346,18 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Dit ging goed/Heb ik geleerd: 
   Korte omschrijving met plaatjes
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
+  Ik heb geleerd om een hamburger menu te maken die werkt en op het scherm tevoorschijn komt. Ook heb ik dit kunnen animeren. Hier ben ik erg blij mee.
+  
+
+  <img src="readme-images/Hamburger_menu.png" width="375px" alt="top">
 
 
   ### Dit was lastig/Is niet gelukt:
   Korte omschrijving met plaatjes
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
+  Het is mij niet gelukt om de carousel goed te maken zoals ik het had gewild. Wel kun je door de carousel heen gaan met scroll animatie. Het is mij niet gelukt om dit te koppelen met de knoppen eronder. Ook heb ik een plaatje niet goed erin kunnen krijgen, omdat het plaatje in landscape is genomen, en de content van het plaatje aan de rechter kant staat.
+
+  <img src="readme-images/Readme_carousel.png" width="375px" alt="bummer">
 </details>
 
 
@@ -353,5 +376,20 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   1. bron 1
   2. bron 2
   3. ...
+  
+  1.  https://icones.js.org/collection/all?s=cross+menu&icon=fluent-emoji-high-contrast:cross-mark
+  2.  https://www.svgrepo.com/svg/532540/location-pin-alt-1?edit=true
+  3.  https://icones.js.org/collection/all?s=arrow+down&icon=solar:alt-arrow-down-linear
+  4.  https://icones.js.org/collection/all?s=twitter&icon=fa6-brands:x-twitter
+	5.  https://www.svgrepo.com/svg/521711/instagram?edit=true
+	6.  https://www.svgrepo.com/svg/513089/youtube-168?edit=true
+	7.  https://www.svgrepo.com/svg/512120/facebook-176?edit=true
+	8.  https://www.svgrepo.com/svg/512419/linkedin-161?edit=true  
+  9.  De plaatjes heb ik van de website zelf gehaald.
+  10. https://icones.js.org/collection/all?s=menu&icon=ic:round-menu
+
+
+
+
 
 </details>

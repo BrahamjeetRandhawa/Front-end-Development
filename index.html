@@ -11,41 +11,72 @@
 	<link href="styles/style.css" rel="stylesheet">
 	<link rel="icon" type="image/svg+xml" href="images/Title_img.png">
 </head>
-<!-- Aan de button meer toevoegen, zoals een hover state, acgtive state en focus state -->
 <body>
 	<header>
-	<h1><a href="index.html"><img src="images/nederland-coca-cola-logo_black_600x96.png" alt="Coca Cola logo en home button"></a></h1>
-	<button>
-		<hr>
-		<hr>
-		<hr>
-	</button>
-	<nav>
+		<nav>
+		<h1><a href="index.html"><img src="images/nederland-coca-cola-logo_black_600x96.png" alt="Coca Cola logo en home button"></a></h1>
+		<button aria-label="Menu voor meer naar meer content"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M4 18h16c.55 0 1-.45 1-1s-.45-1-1-1H4c-.55 0-1 .45-1 1s.45 1 1 1m0-5h16c.55 0 1-.45 1-1s-.45-1-1-1H4c-.55 0-1 .45-1 1s.45 1 1 1M3 7c0 .55.45 1 1 1h16c.55 0 1-.45 1-1s-.45-1-1-1H4c-.55 0-1 .45-1 1"/></svg></button>
+		<!-- Bron -->
+		 <!-- https://icones.js.org/collection/all?s=menu&icon=ic:round-menu -->
+		</nav>
+		<nav>
+		<button aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 32 32"><path fill="currentColor" d="M24.879 2.879A3 3 0 1 1 29.12 7.12l-8.79 8.79a.125.125 0 0 0 0 .177l8.79 8.79a3 3 0 1 1-4.242 4.243l-8.79-8.79a.125.125 0 0 0-.177 0l-8.79 8.79a3 3 0 1 1-4.243-4.242l8.79-8.79a.125.125 0 0 0 0-.177l-8.79-8.79A3 3 0 0 1 7.12 2.878l8.79 8.79a.125.125 0 0 0 .177 0z"/></svg></button>
+		<!-- https://icones.js.org/collection/all?s=cross+menu&icon=fluent-emoji-high-contrast:cross-mark -->
 		<ul>
-			<li>Merken</li>
-			<li>Ontdek</li>
-			<li>Impact</li>
+			<li><a href=""></a>Merken</li>
+			<li>
+				<details>
+					<summary>Ontdek</summary>
+					<ul>
+						<li><a href=""></a>Coca-Cola app</li>
+						<li><a href=""></a>Creations</li>
+						<li><a href=""></a>Fanta Halloween</li>
+						<li><a href=""></a>Win een reiservaring</li>
+						<li><a href=""></a>5 Minuten Vakantie</li>
+						<li><a href=""></a>Coke Studio</li>
+						<li><a href=""></a>Sprite Spice Club</li>
+					</ul>
+				</details>
+			</li>
+			<li>
+				<details>
+					<summary>Impact</summary>
+					<ul>
+						<li><a href=""></a>Duurzaamheid</li>
+						<li><a href=""></a>Maatschappij</li>
+						<li><a href=""></a>This is happening</li>
+					</ul>
+				</details>
+			</li>
 		</ul>
-	</nav>
+		<hr>
+		<p>Selecteer Locatie</p>
+		<button aria-label="Locatie kiezen"><svg width="30px" height="40px" viewBox="-1.2 -1.2 26.40 26.40" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff"><g  stroke-width="0"></g><g  stroke-linecap="round" stroke-linejoin="round"></g><g > <path d="M12 21C15.5 17.4 19 14.1764 19 10.2C19 6.22355 15.866 3 12 3C8.13401 3 5 6.22355 5 10.2C5 14.1764 8.5 17.4 12 21Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M12 12C13.1046 12 14 11.1046 14 10C14 8.89543 13.1046 8 12 8C10.8954 8 10 8.89543 10 10C10 11.1046 10.8954 12 12 12Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>Nederland</button>
+		<!--  https://www.svgrepo.com/svg/532540/location-pin-alt-1?edit=true --> 
+		</nav>
 	</header>
 
 	<main class="index">
+		<div>Loading</div>
+		<div>Loading..</div>
 		<section>
-			<!-- <ul>
-				<li><img src="" alt=""></li>
-			</ul> -->
-<!-- Div of niet?//////////////////////////////////////////////////////////// -->
-			
-			<img src="images/Beetlejuice-Fanta.webp" alt="Beetlejuice Fanta plaatje">
+			<ul>
+				<li><img src="images/Carousel_-1.png" alt="Ontdek de spannended wereld van de Coca-Cola App! Doe mee aan interactie games en maak kans op fantastische prijzen en ontvang exclusief nieuws over onze merken.">
+				<h2>Coca-Cola App</h2>
+				<p>Ontdek de spannended wereld van de Coca-Cola App! Doe mee aan interactie games en maak kans op fantastische prijzen en ontvang exclusief nieuws over onze merken.</p>
+				<button aria-label="download knop voor de Coca-Cola app">Download de Coca-Cola App</button></li>
+				<li><img src="images/Beetlejuice-Fanta.webp" alt="Fanta x Beetlejuice. It's showtime!">
 			<h2>Fanta Halloween</h2>
 			<p>Fanta x Beetlejuice. It's showtime!</p>
-			<button>Ontdek meer</button>
+			<button aria-label="Meer ontdek knop van de Fanta en Beetlejuice">Ontdek meer</button></li>
+			<li><img src="images/Carousel_2-img.webp" alt="Maak kans op onvergetelijke reiservaring met vrienden, je geliefde of je familie en kom weer helemaal in balans met Fuze tea.">
+			<h2>Fuze Tea & TripAdvisor: Win een reiservaring</h2>
+			<p>Maak kans op onvergetelijke reiservaring met vrienden, je geliefde of je familie en kom weer helemaal in balans met Fuze tea.</p>
+			<button aria-label="Meer ontdek knop voor de Fuze Tea en TripAdvisor">Ontdek meer</button></li>
+			</ul>
 		</section>
-				<!-- <div> 
-					<img src="images/Carousel 2 img.webp" alt="Blije mensen in een zonnig gebied">
-				</div> -->
-				<!-- Hier omheen de li omheen zetten. -->
 		<section>
+			<h2 class="Onnodig">Niet nodig</h2>
 			<ul>
 				<li><button class="carousel1" aria-label="Go to slide 1"></button></li>
 				<li><button class="carousel2" aria-label="Go to slide 2"></button></li>
@@ -53,76 +84,78 @@
 			</ul>
 		</section>
 		<h2>Wereldwijde impact</h2>
-		<!-- Hier div weghalen en in de css dit rechtzetten door de section aan te spreken en niet de div:nth-of-type(3) -->
 			<section>
+				<h2 class="Onnodig">Niet nodig</h2>
 				<aside>
 				<h3>Duurzaamheid</h3>
 				<p>Wij streven ernaar om een duurzamere en betere toekomst te creëren voor iedereen. Om een verschil te maken in de levens van mensen, in gemeenschappen en voor onze planeet door op de juiste manier zaken te doen. Door beter te doen als bedrijf, kunnen we bijdragen aan een sterkere, duurzamere toekomst voor ons allemaal.</p>
-				<button>Lees meer</button>
+				<button aria-label="Meer lezen over de duurzamere toekomst van Coca Cola">Lees meer</button>
 				</aside>
 				<img src="images/Duurzaamheid-Coca-Cola.webp" alt="Duurzaamheid plaatje">
 			</section>
-			<!-- article of andere vorm checekn! -->
-		<!-- <img src="images/Duurzaamheid-Coca-Cola.webp" alt="Duurzaamheid plaatje"> -->
 		<section>
 			<h2>Verken onze merken</h2>
 				<ul>
-					<li><img src="images/Coca-Cola_Div-img.webp" alt="Coca-cola linkje"></li>
+					<li><a href=""></a><img src="images/Coca-Cola_Div-img.webp" alt="Coca-cola linkje"></li>
 					<li><a href="Fanta.html"><img src="images/Fanta_div-img.webp" alt="Fanta linkje"></a></li>
-					<li><img src="images/Sprite.webp" alt="Sprite linkje"></li>
-					<li><img src="images/Aquarius.webp" alt="Aquarius linkje"></li>
-					<li><img src="images/Chaudfontaine.webp" alt="Chaudfontaine linkje"></li>
+					<li><a href=""></a><img src="images/Sprite.webp" alt="Sprite linkje"></li>
+					<li><a href=""></a><img src="images/Aquarius.webp" alt="Aquarius linkje"></li>
+					<li><a href=""></a><img src="images/Chaudfontaine.webp" alt="Chaudfontaine linkje"></li>
 				</ul>
-				<!-- Moet ik voor de alles bekijken knop een linkje gebruiken of kan dat ook met een button beschreven worden? -->
 		</section>
-		<button>Alles bekijken</button>
+		<button aria-label="Alles brands bekijken van Coca-Cola">Alles bekijken</button>
 	</main>
 	<!-- Footer maken!!!!!!!!!!!!!!!!!!!!!! -->
 	 <footer>
 		<section>
 			<h2><img src="images/nederland-coca-cola-logo_white_600x96.webp" alt="Coca-cola logo in het wit. Met een zwarte achtergrond in de footer"></h2>
-			<button><svg width="30px" height="40px" viewBox="-1.2 -1.2 26.40 26.40" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M12 21C15.5 17.4 19 14.1764 19 10.2C19 6.22355 15.866 3 12 3C8.13401 3 5 6.22355 5 10.2C5 14.1764 8.5 17.4 12 21Z" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M12 12C13.1046 12 14 11.1046 14 10C14 8.89543 13.1046 8 12 8C10.8954 8 10 8.89543 10 10C10 11.1046 10.8954 12 12 12Z" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>Nederland</button>
+			<button aria-label="Locatie bekijken in Nederland"><svg width="30px" height="40px" viewBox="-1.2 -1.2 26.40 26.40" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff"><g  stroke-width="0"></g><g  stroke-linecap="round" stroke-linejoin="round"></g><g > <path d="M12 21C15.5 17.4 19 14.1764 19 10.2C19 6.22355 15.866 3 12 3C8.13401 3 5 6.22355 5 10.2C5 14.1764 8.5 17.4 12 21Z" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M12 12C13.1046 12 14 11.1046 14 10C14 8.89543 13.1046 8 12 8C10.8954 8 10 8.89543 10 10C10 11.1046 10.8954 12 12 12Z" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>Nederland</button>
 			<!-- Bronnen -->
 			<!-- https://www.svgrepo.com/svg/532540/location-pin-alt-1?edit=true -->
 			<hr>
 			<details>
-				<summary>Over ons</summary>
+				<summary>Over ons<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m19 9l-7 6l-7-6"/></svg></summary>
+				<!-- Bron -->
+				<!-- https://icones.js.org/collection/all?s=arrow+down&icon=solar:alt-arrow-down-linear -->
 				<ul>
-					<li>Ons bedrijf</li>
-					<li>Nieuws</li>
-					<li>Geschiedenis</li>
-					<li>Carière</li>
+					<li><a href=""></a>Ons bedrijf</li>
+					<li><a href=""></a>Nieuws</li>
+					<li><a href=""></a>Geschiedenis</li>
+					<li><a href=""></a>Carière</li>
 				</ul>
 			</details>
 			<details>
-				<summary>Hulp nodig?</summary>
+				<summary>Hulp nodig?<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m19 9l-7 6l-7-6"/></svg></summary>
+				<!-- Bron -->
+				<!-- https://icones.js.org/collection/all?s=arrow+down&icon=solar:alt-arrow-down-linear -->
 				<ul>
-					<li>FAQ</li>
-					<li>Sitemap</li>
-					<li>Contact</li>
+					<li><a href=""></a>FAQ</li>
+					<li><a href=""></a>Sitemap</li>
+					<li><a href=""></a>Contact</li>
 				</ul>
 			</details>
 			<hr>
 			<ul class="informatie">
-				<li>Voorwaarden</li>
-				<li>Cookiebeleid</li>
-				<li>Privacybeleid</li>
-				<li>Cookie-instellingen</li>
+				<li><a href=""></a>Voorwaarden</li>
+				<li><a href=""></a>Cookiebeleid</li>
+				<li><a href=""></a>Privacybeleid</li>
+				<li><a href=""></a>Cookie-instellingen</li>
 			</ul>
 			<hr>
 			<ul>
-				<li></li>
-				<li><svg width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M12 18C15.3137 18 18 15.3137 18 12C18 8.68629 15.3137 6 12 6C8.68629 6 6 8.68629 6 12C6 15.3137 8.68629 18 12 18ZM12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z" fill="#ffffff"></path> <path d="M18 5C17.4477 5 17 5.44772 17 6C17 6.55228 17.4477 7 18 7C18.5523 7 19 6.55228 19 6C19 5.44772 18.5523 5 18 5Z" fill="#ffffff"></path> <path fill-rule="evenodd" clip-rule="evenodd" d="M1.65396 4.27606C1 5.55953 1 7.23969 1 10.6V13.4C1 16.7603 1 18.4405 1.65396 19.7239C2.2292 20.8529 3.14708 21.7708 4.27606 22.346C5.55953 23 7.23969 23 10.6 23H13.4C16.7603 23 18.4405 23 19.7239 22.346C20.8529 21.7708 21.7708 20.8529 22.346 19.7239C23 18.4405 23 16.7603 23 13.4V10.6C23 7.23969 23 5.55953 22.346 4.27606C21.7708 3.14708 20.8529 2.2292 19.7239 1.65396C18.4405 1 16.7603 1 13.4 1H10.6C7.23969 1 5.55953 1 4.27606 1.65396C3.14708 2.2292 2.2292 3.14708 1.65396 4.27606ZM13.4 3H10.6C8.88684 3 7.72225 3.00156 6.82208 3.0751C5.94524 3.14674 5.49684 3.27659 5.18404 3.43597C4.43139 3.81947 3.81947 4.43139 3.43597 5.18404C3.27659 5.49684 3.14674 5.94524 3.0751 6.82208C3.00156 7.72225 3 8.88684 3 10.6V13.4C3 15.1132 3.00156 16.2777 3.0751 17.1779C3.14674 18.0548 3.27659 18.5032 3.43597 18.816C3.81947 19.5686 4.43139 20.1805 5.18404 20.564C5.49684 20.7234 5.94524 20.8533 6.82208 20.9249C7.72225 20.9984 8.88684 21 10.6 21H13.4C15.1132 21 16.2777 20.9984 17.1779 20.9249C18.0548 20.8533 18.5032 20.7234 18.816 20.564C19.5686 20.1805 20.1805 19.5686 20.564 18.816C20.7234 18.5032 20.8533 18.0548 20.9249 17.1779C20.9984 16.2777 21 15.1132 21 13.4V10.6C21 8.88684 20.9984 7.72225 20.9249 6.82208C20.8533 5.94524 20.7234 5.49684 20.564 5.18404C20.1805 4.43139 19.5686 3.81947 18.816 3.43597C18.5032 3.27659 18.0548 3.14674 17.1779 3.0751C16.2777 3.00156 15.1132 3 13.4 3Z" fill="#ffffff"></path> </g></svg></li>
-				<li><svg width="20px" height="20px" viewBox="0 -3 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#ffffff" stroke="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>youtube [#ffffff]</title> <desc>Created with Sketch.</desc> <defs> </defs> <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g id="Dribbble-Light-Preview" transform="translate(-300.000000, -7442.000000)" fill="#ffffff"> <g id="icons" transform="translate(56.000000, 160.000000)"> <path d="M251.988432,7291.58588 L251.988432,7285.97425 C253.980638,7286.91168 255.523602,7287.8172 257.348463,7288.79353 C255.843351,7289.62824 253.980638,7290.56468 251.988432,7291.58588 M263.090998,7283.18289 C262.747343,7282.73013 262.161634,7282.37809 261.538073,7282.26141 C259.705243,7281.91336 248.270974,7281.91237 246.439141,7282.26141 C245.939097,7282.35515 245.493839,7282.58153 245.111335,7282.93357 C243.49964,7284.42947 244.004664,7292.45151 244.393145,7293.75096 C244.556505,7294.31342 244.767679,7294.71931 245.033639,7294.98558 C245.376298,7295.33761 245.845463,7295.57995 246.384355,7295.68865 C247.893451,7296.0008 255.668037,7296.17532 261.506198,7295.73552 C262.044094,7295.64178 262.520231,7295.39147 262.895762,7295.02447 C264.385932,7293.53455 264.28433,7285.06174 263.090998,7283.18289" id="youtube-[#ffffff]"> </path> </g> </g> </g> </g></svg></li>
-				<li><svg width="20px" height="20px" viewBox="-5 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#ffffff" stroke="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>facebook [#ffffff]</title> <desc>Created with Sketch.</desc> <defs> </defs> <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g id="Dribbble-Light-Preview" transform="translate(-385.000000, -7399.000000)" fill="#ffffff"> <g id="icons" transform="translate(56.000000, 160.000000)"> <path d="M335.821282,7259 L335.821282,7250 L338.553693,7250 L339,7246 L335.821282,7246 L335.821282,7244.052 C335.821282,7243.022 335.847593,7242 337.286884,7242 L338.744689,7242 L338.744689,7239.14 C338.744689,7239.097 337.492497,7239 336.225687,7239 C333.580004,7239 331.923407,7240.657 331.923407,7243.7 L331.923407,7246 L329,7246 L329,7250 L331.923407,7250 L331.923407,7259 L335.821282,7259 Z" id="facebook-[#ffffff]"> </path> </g> </g> </g> </g></svg></li>
+				<li><a href=""></a><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 512 512"><path fill="white" d="M389.2 48h70.6L305.6 224.2L487 464H345L233.7 318.6L106.5 464H35.8l164.9-188.5L26.8 48h145.6l100.5 132.9zm-24.8 373.8h39.1L151.1 88h-42z"/></svg></li>
+				<li><a href=""></a><svg width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g  stroke-linecap="round" stroke-linejoin="round"></g><g > <path fill-rule="evenodd" clip-rule="evenodd" d="M12 18C15.3137 18 18 15.3137 18 12C18 8.68629 15.3137 6 12 6C8.68629 6 6 8.68629 6 12C6 15.3137 8.68629 18 12 18ZM12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z" fill="#ffffff"></path> <path d="M18 5C17.4477 5 17 5.44772 17 6C17 6.55228 17.4477 7 18 7C18.5523 7 19 6.55228 19 6C19 5.44772 18.5523 5 18 5Z" fill="#ffffff"></path> <path fill-rule="evenodd" clip-rule="evenodd" d="M1.65396 4.27606C1 5.55953 1 7.23969 1 10.6V13.4C1 16.7603 1 18.4405 1.65396 19.7239C2.2292 20.8529 3.14708 21.7708 4.27606 22.346C5.55953 23 7.23969 23 10.6 23H13.4C16.7603 23 18.4405 23 19.7239 22.346C20.8529 21.7708 21.7708 20.8529 22.346 19.7239C23 18.4405 23 16.7603 23 13.4V10.6C23 7.23969 23 5.55953 22.346 4.27606C21.7708 3.14708 20.8529 2.2292 19.7239 1.65396C18.4405 1 16.7603 1 13.4 1H10.6C7.23969 1 5.55953 1 4.27606 1.65396C3.14708 2.2292 2.2292 3.14708 1.65396 4.27606ZM13.4 3H10.6C8.88684 3 7.72225 3.00156 6.82208 3.0751C5.94524 3.14674 5.49684 3.27659 5.18404 3.43597C4.43139 3.81947 3.81947 4.43139 3.43597 5.18404C3.27659 5.49684 3.14674 5.94524 3.0751 6.82208C3.00156 7.72225 3 8.88684 3 10.6V13.4C3 15.1132 3.00156 16.2777 3.0751 17.1779C3.14674 18.0548 3.27659 18.5032 3.43597 18.816C3.81947 19.5686 4.43139 20.1805 5.18404 20.564C5.49684 20.7234 5.94524 20.8533 6.82208 20.9249C7.72225 20.9984 8.88684 21 10.6 21H13.4C15.1132 21 16.2777 20.9984 17.1779 20.9249C18.0548 20.8533 18.5032 20.7234 18.816 20.564C19.5686 20.1805 20.1805 19.5686 20.564 18.816C20.7234 18.5032 20.8533 18.0548 20.9249 17.1779C20.9984 16.2777 21 15.1132 21 13.4V10.6C21 8.88684 20.9984 7.72225 20.9249 6.82208C20.8533 5.94524 20.7234 5.49684 20.564 5.18404C20.1805 4.43139 19.5686 3.81947 18.816 3.43597C18.5032 3.27659 18.0548 3.14674 17.1779 3.0751C16.2777 3.00156 15.1132 3 13.4 3Z" fill="#ffffff"></path> </g></svg></li>
+				<li><a href=""></a><svg width="20px" height="20px" viewBox="0 -3 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#ffffff" stroke="#ffffff"><g  stroke-width="0"></g><g  stroke-linecap="round" stroke-linejoin="round"></g><g > <title>youtube [#ffffff]</title> <desc>Created with Sketch.</desc> <defs> </defs> <g  stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g  transform="translate(-300.000000, -7442.000000)" fill="#ffffff"> <g  transform="translate(56.000000, 160.000000)"> <path d="M251.988432,7291.58588 L251.988432,7285.97425 C253.980638,7286.91168 255.523602,7287.8172 257.348463,7288.79353 C255.843351,7289.62824 253.980638,7290.56468 251.988432,7291.58588 M263.090998,7283.18289 C262.747343,7282.73013 262.161634,7282.37809 261.538073,7282.26141 C259.705243,7281.91336 248.270974,7281.91237 246.439141,7282.26141 C245.939097,7282.35515 245.493839,7282.58153 245.111335,7282.93357 C243.49964,7284.42947 244.004664,7292.45151 244.393145,7293.75096 C244.556505,7294.31342 244.767679,7294.71931 245.033639,7294.98558 C245.376298,7295.33761 245.845463,7295.57995 246.384355,7295.68865 C247.893451,7296.0008 255.668037,7296.17532 261.506198,7295.73552 C262.044094,7295.64178 262.520231,7295.39147 262.895762,7295.02447 C264.385932,7293.53455 264.28433,7285.06174 263.090998,7283.18289" > </path> </g> </g> </g> </g></svg></li>
+				<li><a href=""></a><svg width="20px" height="20px" viewBox="-5 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#ffffff" stroke="#ffffff"><g  stroke-width="0"></g><g  stroke-linecap="round" stroke-linejoin="round"></g><g > <title>facebook [#ffffff]</title> <desc>Created with Sketch.</desc> <defs> </defs> <g  stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g  transform="translate(-385.000000, -7399.000000)" fill="#ffffff"> <g  transform="translate(56.000000, 160.000000)"> <path d="M335.821282,7259 L335.821282,7250 L338.553693,7250 L339,7246 L335.821282,7246 L335.821282,7244.052 C335.821282,7243.022 335.847593,7242 337.286884,7242 L338.744689,7242 L338.744689,7239.14 C338.744689,7239.097 337.492497,7239 336.225687,7239 C333.580004,7239 331.923407,7240.657 331.923407,7243.7 L331.923407,7246 L329,7246 L329,7250 L331.923407,7250 L331.923407,7259 L335.821282,7259 Z" > </path> </g> </g> </g> </g></svg></li>
 			</ul>
 			<!-- Bronnen -->
+			<!-- https://icones.js.org/collection/all?s=twitter&icon=fa6-brands:x-twitter -->
 			<!-- https://www.svgrepo.com/svg/521711/instagram?edit=true -->
 			<!-- https://www.svgrepo.com/svg/513089/youtube-168?edit=true -->
 			<!-- https://www.svgrepo.com/svg/512120/facebook-176?edit=true -->
-			<ul class="Social_Media">
-				<li><img src="images/Apple_store.webp" alt="Apple store download linkje"></li>
-				<li><img src="images/Google_playstore.webp" alt="Google playstore download linkje"></li>
+			<ul class="App_Store">
+				<li><a href=""></a><img src="images/Apple_store.webp" alt="Apple store download linkje"></li>
+				<li><a href=""></a><img src="images/Google_playstore.webp" alt="Google playstore download linkje"></li>
 			</ul>
 			<p>© The Coca‑Cola Company, alle rechten voorbehouden</p>
 		</section>
@@ -133,8 +166,5 @@
 	
 </html>
 
-<!-- iconen opnieuw zoeken en downloaden en dan rechtzetten in de li. -->
-
 
 <!-- Bronnenlijst toevoegen!! -->
-<!-- https://icons8.com/icons/set/x -->
