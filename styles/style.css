@@ -1,36 +1,33 @@
-
 /**************/
 /* CSS REMEDY */
 /**************/
-*, *::after, *::before {
-	box-sizing:border-box;  
-  }
-  
-  
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+}
 
-  
-  
-  
-  /*********************/
-  /* CUSTOM PROPERTIES */
-  /*********************/
-  :root {
-	  /* startje */
-	  --color-text:#ffffff;
-	  --color-background: rgb(238, 238, 238);
-	  /* color-scheme: light dark; */
-  }
 
-  .dark
-  
-  
-  
-  
-  /****************/
-  /* JOUW STYLING */
-  /****************/
-  
-  /* jouw code */
+
+
+
+
+/*********************/
+/* CUSTOM PROPERTIES */
+/*********************/
+:root {
+	/* startje */
+	--color-text: #ffffff;
+	--color-background: rgb(238, 238, 238);
+	/* color-scheme: light dark; */
+}
+
+.dark
+/****************/
+/* JOUW STYLING */
+/****************/
+
+/* jouw code */
 
 h2 {
 	font-family: sans-serif;
@@ -61,7 +58,7 @@ body {
 	margin: 0;
 	padding: 0;
 	margin-bottom: 50px;
-	
+
 }
 
 
@@ -106,7 +103,7 @@ h1 a {
 	display: flex;
 	margin-top: 1px;
 	transform: translateX(20px)
-} 
+}
 
 nav:nth-of-type(2) {
 	position: absolute;
@@ -232,7 +229,7 @@ nav:nth-of-type(2).verbergMenu {
 }
 
 
-.index div:first-of-type  {
+.index div:first-of-type {
 	-webkit-animation: rotate 3s forwards;
 	animation: rotate 4s linear;
 }
@@ -242,36 +239,43 @@ nav:nth-of-type(2).verbergMenu {
 		opacity: 0;
 		transform: rotate(0deg);
 	}
+
 	5% {
 		z-index: 2;
 		opacity: 1;
 		transform: rotate(180deg);
 	}
+
 	10% {
 		z-index: 2;
 		opacity: 1;
 		transform: rotate(360deg);
 	}
+
 	15% {
 		z-index: 2;
 		opacity: 1;
 		transform: rotate(540deg);
 	}
+
 	20% {
 		z-index: 2;
 		opacity: 1;
 		transform: rotate(720deg);
 	}
+
 	25% {
 		z-index: 2;
 		opacity: 1;
 		transform: rotate(900deg);
 	}
+
 	90% {
 		z-index: 2;
 		opacity: 1;
 		transform: rotate(1080deg);
 	}
+
 	100% {
 		opacity: 0;
 		display: none;
@@ -305,23 +309,27 @@ nav:nth-of-type(2).verbergMenu {
 		z-index: 1;
 		opacity: 1;
 	}
+
 	25% {
 		color: black;
 		z-index: 1;
 		opacity: 1;
 	}
+
 	50% {
 		color: black;
 		font-size: 18px;
 		z-index: 1;
 		opacity: 1;
 	}
+
 	75% {
 		color: black;
 		font-size: 16px;
 		z-index: 1;
 		opacity: 1;
 	}
+
 	100% {
 		opacity: 0;
 		display: none;
@@ -351,7 +359,7 @@ nav:nth-of-type(2).verbergMenu {
 	scroll-snap-align: center;
 }
 
-.index section:first-of-type  ul li img {
+.index section:first-of-type ul li img {
 	width: 20em;
 }
 
@@ -532,7 +540,7 @@ nav:nth-of-type(2).verbergMenu {
 	justify-content: center;
 }
 
-.index > button:last-of-type {
+.index>button:last-of-type {
 	display: flex;
 	flex-wrap: unset;
 	margin: 0 auto;
@@ -610,7 +618,7 @@ footer section details summary {
 	justify-content: space-between;
 }
 
-footer section details[open] summary ~ *  {
+footer section details[open] summary~* {
 	animation: linksEnRechts .5s ease-in-out;
 }
 
@@ -619,6 +627,7 @@ footer section details[open] summary ~ *  {
 		opacity: 0;
 		transform: translateX(-50%);
 	}
+
 	100% {
 		opacity: 1;
 		transform: translateX(0%);
@@ -834,7 +843,7 @@ footer section p:last-of-type {
 	font-size: 20px;
 }
 
-.Fanta details[open] summary ~ *  {
+.Fanta details[open] summary~* {
 	animation: linkRechts 1s ease-in-out;
 }
 
@@ -843,6 +852,7 @@ footer section p:last-of-type {
 		opacity: 0;
 		transform: translateX(-50%);
 	}
+
 	100% {
 		opacity: 1;
 		transform: translateX(0%);
@@ -948,4 +958,3 @@ footer section p:last-of-type {
 	align-items: center;
 	justify-content: center;
 }
-
