@@ -226,6 +226,7 @@ nav:nth-of-type(2).verbergMenu {
 	border-top: 10px solid black;
 	color: transparent;
 	opacity: 0;
+	position: fixed;
 }
 
 
@@ -297,6 +298,7 @@ nav:nth-of-type(2).verbergMenu {
 	justify-content: center;
 	align-items: center;
 	opacity: 0;
+	position: fixed;
 }
 
 .index div:nth-of-type(2) {
@@ -633,6 +635,8 @@ footer section details[open] summary~* {
 		transform: translateX(0%);
 	}
 }
+
+/* https://stackoverflow.com/questions/38213329/how-to-add-css3-transition-with-html5-details-summary-tag-reveal */
 
 footer section details ul {
 	display: flex;

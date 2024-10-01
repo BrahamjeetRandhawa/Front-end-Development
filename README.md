@@ -387,6 +387,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 	8.  https://www.svgrepo.com/svg/512419/linkedin-161?edit=true  
   9.  De plaatjes heb ik van de website zelf gehaald.
   10. https://icones.js.org/collection/all?s=menu&icon=ic:round-menu
+  11.  https://stackoverflow.com/questions/38213329/how-to-add-css3-transition-with-html5-details-summary-tag-reveal
 
 
 
